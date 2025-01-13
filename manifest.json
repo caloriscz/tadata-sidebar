@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "TadataSideBar",
+  "version": "1.0",
+  "description": "A sidebar for interacting with Tadata system.",
+  "permissions": ["storage", "activeTab", "contextMenus"],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "TadataSideBar"
+  },
+  "sidebar_action": {
+    "default_title": "TadataSideBar",
+    "default_panel": "sidebar.html"
+  },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}
